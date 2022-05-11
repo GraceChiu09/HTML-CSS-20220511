@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
+        }
+
+        body {
+            width: 960px;
+            /* height: 960px; */
+
+
+        }
+
+        .container {
+
+            text-align: center;
+            /* margin: 10px; */
+            border: 1px blue;
+        }
+
+        .clear-fix::after {
+            content: "";
+            clear: both;
+            display: block;
+
+        }
+
+        .box {
+            width: 280px;
+            height: 200px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            /* flex-basis: 100%; */
+
+        }
+
+        /* .box {
+            width: 600px;
+            height: 400px;
+        } */
+
+        .box1 {
+            /* border: 1px solid red; */
+            background-color: aqua;
+            /* flex-basis: 30%; */
+            /* float: left; */
+
+
+
+        }
+
+        .box2 {
+            background-color: red;
+            /* flex-basis: 30%; */
+            /* float: left; */
+
+        }
+
+        .box3 {
+            background-color: yellow;
+            /* float:right; */
+            /* flex-basis: 30%; */
+            /* float: left; */
+
+
         }
     </style>
 </head>
+
 <body>
-    
+    <h3>float box</h3>
+    <div class="container clear-fix">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+
+    </div>
+
+    <div class="container clear-fix">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+
+    </div>
+
+
+
+
 </body>
+
 </html>
