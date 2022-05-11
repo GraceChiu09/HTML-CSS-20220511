@@ -25,6 +25,7 @@
             text-align: center;
             /* margin: 10px; */
             border: 1px blue;
+            /* justify-content: space-around; */
         }
 
         .clear-fix::after {
@@ -39,17 +40,14 @@
             height: 200px;
             float: left;
             margin-right: 20px;
-            margin-bottom: 20px;
+            margin-top: 50px;
             /* flex-basis: 100%; */
+            padding: 80px;
 
         }
 
-        /* .box {
-            width: 600px;
-            height: 400px;
-        } */
 
-        .box1 {
+        .a1 {
             /* border: 1px solid red; */
             background-color: aqua;
             /* flex-basis: 30%; */
@@ -59,18 +57,20 @@
 
         }
 
-        .box2 {
+        .a2 {
             background-color: red;
             /* flex-basis: 30%; */
             /* float: left; */
+            /* justify-content: space-around; */
 
         }
 
-        .box3 {
+        .a3 {
             background-color: yellow;
             /* float:right; */
             /* flex-basis: 30%; */
             /* float: left; */
+            /* justify-content: space-around; */
 
 
         }
@@ -80,16 +80,16 @@
 <body>
     <h3>float box</h3>
     <div class="container clear-fix">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
+        <div class="box a1">1</div>
+        <div class="box a2">2</div>
+        <div class="box a3">3</div>
 
     </div>
 
     <div class="container clear-fix">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
+        <div class="box a1">1</div>
+        <div class="box a2">2</div>
+        <div class="box a3">3</div>
 
     </div>
 
