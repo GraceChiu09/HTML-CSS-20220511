@@ -10,10 +10,10 @@
         .box1{
             border: 2px solid red;
             /* border-color: aqua; */
-            height: 500px;
+            /* height: 500px; */
             padding: 10px 10px;
             margin: 10px 10px;
-            overflow: auto;
+            /* overflow: auto; */
         }
         .box2{
             border: 2px solid red;
@@ -31,6 +31,13 @@
             margin: 10px 10px;
             
         }
+        /*清除左右*/
+        .clearfix::after{
+            content: "123";
+
+            clear: both;
+            display: table;
+        }
     </style>
 
 
@@ -38,11 +45,20 @@
 </head>
 
 <body>
-    <div class="box1">
+    <div class="box1 clearfix">
+        
+        <img src="https://picsum.photos/id/237/200/300" alt="test1">
         <img src="https://picsum.photos/id/237/200/300" alt="test1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deserunt, quasi impedit, atque, nemo doloribus
         quidem vero perspiciatis natus pariatur repudiandae nobis culpa necessitatibus facere molestiae? Laudantium hic
         quos et.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deserunt, quasi impedit, atque, nemo doloribus
+        quidem vero perspiciatis natus pariatur repudiandae nobis culpa necessitatibus facere molestiae? Laudantium hic
+        quos et.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deserunt, quasi impedit, atque, nemo doloribus
+        quidem vero perspiciatis natus pariatur repudiandae nobis culpa necessitatibus facere molestiae? Laudantium hic
+        quos et.
+        
     </div>
     <div class="box2">
         <img src="https://picsum.photos/seed/picsum/200/300" alt="test2">
